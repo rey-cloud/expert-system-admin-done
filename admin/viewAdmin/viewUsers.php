@@ -50,7 +50,7 @@
                 echo "<td>".$row['s_answer']."</td>";
                 echo "<td>".$row['type']."</td>";
                 echo "<td>".$row['created_at']."</td>";
-                echo '<td><form method="post" action="../confirm-modal.php">
+                echo '<td><form method="post" action="">
                   <input type="hidden" name="user_id" value="' . $row['user_id'] . '">
                   <input type="submit" value="Delete">
                   </form></td>';

@@ -37,9 +37,11 @@ if (isset($_POST['email'])) {
                 $_SESSION['admin'] = true;
                 header("Location: ../index.php?admin-page=true");
             } else {
+                unset($_SESSION['admin-id']);
                 header("Location: ../index.php?existing-user=true");
             }
         } else {
+            unset($_SESSION['admin-id']);
             header("Location: ../index.php?new-user=true");
         }
     }
